@@ -1,0 +1,14 @@
+{
+  "extends": "@repo/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+     "@ui/*": ["./shadcn/*", "./components/*", "./components/icon/*", "./aceternity/*","./nextui/*"]
+    }
+  },
+ "include": ["nextui/**/*.tsx","aceternity/**/*.tsx","shadcn/**/*.tsx","tailwind.config.ts", "shadcn/**/*.ts" ,"components/**/*.ts","components/**/*.tsx", "postcss.config.js", "components/icon/react-icons.ts"],
+  "exclude": ["node_modules"]
+}
+
+
+

@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "db:migrate:deploy": "turbo run db:migrate:deploy",
+    "db:push": "turbo run db:push",
+    "db:seed": "turbo run db:seed",
+    "generate": "turbo run generate",
+    "ui:add": "pnpm --filter @repo/ui ui:add"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "eslint": "8.48.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tsx": "^4.15.4",
+    "turbo": "^2.0.3"
+  },
+  "resolutions": {
+    "@types/react": "18.2.24"
+  },
+  "packageManager": "pnpm@9.0.6",
+  "engines": {
+    "node": ">=21.6.2"
+  },
+  "name": "rainbow-app"
+}

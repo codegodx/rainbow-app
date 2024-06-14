@@ -1,0 +1,37 @@
+{
+  "name": "@repo/database",
+  "version": "1.0.0",
+  "exports": {
+    "./prisma": "./config/client.ts"
+  },
+  "scripts": {
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:seed": "tsx config/seed.ts",
+    "dev": "tsup config/client.ts --watch --d dist",
+    "format": "prisma format",
+    "generate": "prisma generate",
+    "lint": "eslint . --max-warnings 0",
+    "prebuild": "npm run generate",
+    "predev": "npm run generate",
+    "studio": "prisma studio",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.15.0",
+    "bcryptjs": "^2.4.3",
+    "tsup": "^8.1.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "eslint": "^8.57.0",
+    "prisma": "^5.15.0",
+    "rimraf": "^5.0.7",
+    "tsx": "^4.15.4",
+    "typescript": "^5.4.5"
+  }
+}

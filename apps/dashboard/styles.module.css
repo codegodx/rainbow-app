@@ -1,0 +1,15 @@
+.Scrollbar::-webkit-scrollbar {
+   scrollbar-width: none;
+  background: #000000;
+}
+
+.Scrollbar::-webkit-scrollbar-thumb {
+  background: #a200d3;
+  border-radius: 10px;
+}
+
+.Scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #580480;
+}
+  
+
